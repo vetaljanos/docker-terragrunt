@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-  python3-pip curl unzip git \
+  python3-pip curl unzip git jq \
   && rm -rf /var/lib/apt/lists/*
 
 RUN curl https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip -O \
